@@ -1,0 +1,53 @@
+/*---------> Generale <--------- */
+body{
+    font-family: Lexend;
+}
+/*---------> Titolo <--------- */
+h1{
+    color: #2c5a92;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: -140px;
+}
+/*---------> Posizionamento dei tasti <--------- */
+.calculator-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: minmax(40px, auto) repeat(5, 40px);
+    grid-gap: 5px;
+    min-height: 100vh; 
+}
+#span_four{
+    grid-column: span 4; 
+}
+/*---------> Stile dei tasti <--------- */
+button{
+    color: #2c5a92;
+    font-size: x-large;
+    font-weight: bolder;
+    border: none;
+    background-color: #cccccc;
+}
+button:hover{
+    background-color: aliceblue;
+    border: 2px solid #2c5a92;
+}
+/*---------> Risultato <--------- */
+#output{
+    grid-column: 1/-1;
+    display: flex;
+    align-items: flex-end;
+    border: 2px solid #2c5a92;
+}
+#risultato{
+    color: #2c5a92;
+    font-size: x-large;
+    font-weight: bolder;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-left: 2%; 
+}
+
+
