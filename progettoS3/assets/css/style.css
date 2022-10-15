@@ -17,7 +17,7 @@ h1{
     grid-template-columns: repeat(4, 50px);
     grid-template-rows: minmax(40px, auto) repeat(5, 40px);
     grid-gap: 5px;
-    min-height: 100vh; 
+    min-height: 50vh; 
 }
 #span_four{
     grid-column: span 4; 
@@ -49,5 +49,27 @@ button:hover{
     margin-bottom: 0%;
     padding-left: 2%; 
 }
-
+/*------------->Responsive<-----------*/
+@media screen and (max-width: 412px){
+           h1{
+               font-size: xx-large;
+           }
+           .calculator-grid{
+               position: fixed;
+               margin-top: -300px;
+               grid-template-columns: repeat(4, 80px);
+               grid-template-rows: minmax(60px, auto) repeat(5, 60px);
+           }
+}
+@media screen and (max-width: 400px) {
+           h1{
+               font-size: xx-large;
+           }
+           .calculator-grid{ 
+               position: fixed;
+               margin-top: 100px;
+               grid-template-columns: repeat(4, 80px);
+               grid-template-rows: minmax(60px, auto) repeat(5, 60px);
+           }
+}
 
